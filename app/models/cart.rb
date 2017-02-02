@@ -24,7 +24,6 @@ class Cart < ActiveRecord::Base
   def checkout
     self.status = "inactive"
     change_inventory
-    user.remove_cart
   end
 
   def change_inventory
