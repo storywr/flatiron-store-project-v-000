@@ -3,7 +3,7 @@ class CreateCarts < ActiveRecord::Migration
     create_table :carts do |t|
       t.string :name
       t.integer :user_id
-      t.string :status, default: 'active'
+      t.string :status, default: 'not submitted'
       t.timestamps null: false
     end
   end
